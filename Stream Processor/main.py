@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-TOPIC = "raw-temperature" # defines the input topic
+TOPIC = "raw-temp-data" # defines the input topic
 SINK = "agg-temperature"  # defines the output topic
 WINDOW = 10  # defines the length of the time window in seconds
 WINDOW_EXPIRES = 1 # defines, in seconds, how late data can arrive before it is excluded from the window
