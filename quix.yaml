@@ -5,7 +5,22 @@ metadata:
   version: 1.0
 
 # This section describes the Deployments of the data pipeline
-deployments: []
+deployments:
+  - name: Stream Producer
+    application: Stream Producer
+    deploymentType: Service
+    version: 408da25805f3701a6751071403e047604d6397ae
+    resources:
+      cpu: 200
+      memory: 500
+      replicas: 1
+    desiredStatus: Running
+    variables:
+      - name: output
+        inputType: OutputTopic
+        description: The topic that stores the raw temperature data.
+        required: true
+        value: raw-temp-data
 
 # This section describes the Topics of the data pipeline
 topics:
