@@ -24,7 +24,7 @@ deployments:
   - name: Stream Processor
     application: Stream Processor
     deploymentType: Service
-    version: 0c13822b4b0bb39bc1be0c687ab64fb71f6b876d
+    version: 49abc0602921d3c4143462a5eb4bbc1c39ec5d68
     resources:
       cpu: 200
       memory: 500
