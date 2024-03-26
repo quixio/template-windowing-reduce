@@ -1,0 +1,11 @@
+name: Stream Producer
+language: python
+variables:
+  - name: input
+    inputType: InputTopic
+    description: This is the input topic for demo data
+    defaultValue: ''
+    required: true
+dockerfile: dockerfile
+runEntryPoint: main.py
+defaultFile: main.py
