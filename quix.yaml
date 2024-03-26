@@ -29,7 +29,7 @@ deployments:
       cpu: 200
       memory: 500
       replicas: 1
-    desiredStatus: Stopped
+    desiredStatus: Running
     variables:
       - name: input
         inputType: InputTopic
@@ -52,6 +52,13 @@ topics:
       retentionInMinutes: 1440
       retentionInBytes: 52428800
   - name: agg-temperature
+    persisted: false
+    configuration:
+      partitions: 1
+      replicationFactor: 2
+      retentionInMinutes: 1440
+      retentionInBytes: 52428800
+  - name: raw-temperature
     persisted: false
     configuration:
       partitions: 1
