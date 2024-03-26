@@ -24,12 +24,12 @@ deployments:
   - name: Stream Processor
     application: Stream Processor
     deploymentType: Service
-    version: 5d14627e543f66ab37f336acebffaca8ac354e13
+    version: 0c13822b4b0bb39bc1be0c687ab64fb71f6b876d
     resources:
       cpu: 200
       memory: 500
       replicas: 1
-    desiredStatus: Running
+    desiredStatus: Stopped
     variables:
       - name: input
         inputType: InputTopic
