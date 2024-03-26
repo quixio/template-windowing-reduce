@@ -1,6 +1,11 @@
 name: Stream Producer
 language: python
-variables: []
+variables:
+  - name: output
+    inputType: OutputTopic
+    description: The topic that stores the raw temperature data.
+    defaultValue: raw-temp-data
+    required: true
 dockerfile: dockerfile
 runEntryPoint: main.py
 defaultFile: main.py
